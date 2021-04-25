@@ -8,6 +8,8 @@ A child theme of twentytwentyone to practice making my own theme<br>
 * GeneratePress
 * astra
 
+[Add bootstrap](https://www.greengeeks.com/blog/bootstrap-wordpress/)
+
 ### Wordpress Themes I Enjoy
 * Calliope (lobosecurity)
 * colibri wp
