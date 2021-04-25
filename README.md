@@ -27,7 +27,9 @@ A child theme of twentytwentyone to practice making my own theme<br>
 * dentalcare
 
 
-Someone recommends using blockbuilder 
+### Wordpress React
+
+[Wordpress React Tutorial](https://www.iamtimsmith.com/blog/using-wordpress-with-react)
 
 ## ToDO
 * [x] header.php overwrites the header in original theme 
