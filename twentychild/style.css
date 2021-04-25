@@ -1,0 +1,43 @@
+/* 
+Theme Name: TwentyChild
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Description: Twentytwentyone child theme
+Author: Wordpress
+Author URI: https://wordpress.org/
+Template: twentytwentyone
+Version: 1.0
+*/
+
+/* =Theme customization starts here */
+/* ------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Limelight&family=Ranga&display=swap');
+
+
+.site {
+    background-color: beige;
+}
+
+h2 {
+    color: pink !important;
+    font-family: 'limelight', cursive !important;
+}
+
+.site-branding{
+    color: pink;
+    font-family: 'limelight', cursive !important;
+}
+
+#content{
+    background-color: purple;
+}
+
+.widget-area{
+    margin: 10px 40px;
+}
+
+#masthead{
+    background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1235&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
