@@ -29,7 +29,7 @@ A child theme of twentytwentyone to practice making my own theme<br>
 
 ### Wordpress React
 
-[Wordpress React Tutorial](https://www.iamtimsmith.com/blog/using-wordpress-with-react)
+[Wordpress React Tutorial](https://www.iamtimsmith.com/blog/using-wordpress-with-react) Doesnt work followed it.
 
 ## ToDO
 * [x] header.php overwrites the header in original theme 
