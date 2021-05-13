@@ -8,15 +8,10 @@ Libraries: Bootstrap, Google Fonts, FontAwesome
 
 
 
-A child theme of twentytwentyone to practice making my own theme(child theme kinsta tutorial)[https://kinsta.com/blog/twenty-twenty-one-theme/#how-to-build-a-child-theme-on-twenty-twentyone]
-<br>
+twentychild; A child theme of twentytwentyone to practice making my own theme
+[How to add new block patterns or template](#https://kinsta.com/blog/twenty-twenty-one-theme/#how-to-build-a-child-theme-on-twenty-twentyone)<br>
 
-[How to add new block patterns or template](#https://kinsta.com/blog/twenty-twenty-one-theme/#how-to-build-a-child-theme-on-twenty-twentyone)
 
-[Reddit good free starter themes](https://www.reddit.com/r/Wordpress/comments/mxq8cb/i_see_a_lot_of_requests_for_good_free_themes_so_i/)
-* picostrap
-* GeneratePress
-* astra
 
 [Add bootstrap](https://www.greengeeks.com/blog/bootstrap-wordpress/)
 [Add FontAwesome](#)
@@ -28,6 +23,12 @@ A child theme of twentytwentyone to practice making my own theme(child theme kin
 ```
 
 ### Wordpress Themes I Enjoy
+[Reddit good free starter themes](https://www.reddit.com/r/Wordpress/comments/mxq8cb/i_see_a_lot_of_requests_for_good_free_themes_so_i/)
+* picostrap
+* GeneratePress
+* astra
+
+<b>Themes Tried</b>
 * Calliope (lobosecurity)
 * colibri wp
 * neve
@@ -57,3 +58,4 @@ A child theme of twentytwentyone to practice making my own theme(child theme kin
   * [x] call function that reads old style and reads new styles
 * [ ] Finish creating Picostrap child theme
   * [x] Create a copy of picostrap website headers under picostrap-clone
+  * [] Create a sample home page 
