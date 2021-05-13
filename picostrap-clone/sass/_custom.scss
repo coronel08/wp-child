@@ -1,0 +1,32 @@
+// Custom CSS
+.picostrap-logo{
+    font-family: 'Pacifico', cursive;
+    color: #e9548d;
+    font-size: 3rem;
+}
+
+@include media-breakpoint-up(md){
+    .picostrap-logo{
+        font-size: 8rem;
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .picostrap-logo{
+        font-size: 11rem;
+    }
+}
+
+#logo-blue{
+    color: #43c6da;
+}
+
+.logo-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+#header-button2{
+    color: black;
+    background-color: #a3a5bd;
+}
