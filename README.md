@@ -7,6 +7,7 @@ Libraries: Bootstrap, Google Fonts, FontAwesome
 
 
 
+Look into bravada theme or the [avada theme](https://avada.theme-fusion.com/information-technology/)
 
 twentychild; A child theme of twentytwentyone to practice making my own theme
 [How to add new block patterns or template](#https://kinsta.com/blog/twenty-twenty-one-theme/#how-to-build-a-child-theme-on-twenty-twentyone)<br>
@@ -59,3 +60,10 @@ twentychild; A child theme of twentytwentyone to practice making my own theme
 * [ ] Finish creating Picostrap child theme
   * [x] Create a copy of picostrap website headers under picostrap-clone
   * [] Create a sample home page 
+    * [x] Change bootstrap style to make responsive on bootstrap md-size screens [Grid Tiers Bootstrap breakpoints and max-wdiths](https://getbootstrap.com/docs/4.1/layout/grid/#grid-tiers)
+    ```
+    .container, .container-md, .container-sm {
+    max-width: 100%;
+}
+* [] Create font awesome section and then we are done.
+    ```
