@@ -6,6 +6,10 @@ Libraries: Bootstrap, Google Fonts, FontAwesome
 ![](./picostrap-clone/screenshot.png)
 
 
+<b>Fcoronel.com</b> created a clone of my old portfolio page using bootstrap. Also uses Jquery.
+
+
+<b>Myspace Theme</b>
 
 Look into bravada theme or the [avada theme](https://avada.theme-fusion.com/information-technology/)
 
