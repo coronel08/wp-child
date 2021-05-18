@@ -33,6 +33,9 @@ twentychild; A child theme of twentytwentyone to practice making my own theme
 * GeneratePress
 * astra
 
+try
+[Bootscore](https://bootscore.me/)
+
 <b>Themes Tried</b>
 * Calliope (lobosecurity)
 * colibri wp
