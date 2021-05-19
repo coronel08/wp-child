@@ -1,0 +1,111 @@
+<!-- wp:paragraph -->
+<p>I am going to go into a couple of details on how I like to setup a website for personal sites,  businesses, and E-Commerce. There are many ways to setup a website but I typically like using Wordpress, so this article will focus on getting Wordpress up and running. You are going to need a few things to get a website going and I will focus on what I believe to be the best path. Wordpress requires a Database, Webserver, and PHP programming language installed, also known as a technology stack. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol id="block-40180325-c166-4c8a-b5e2-7252b3e54cfa"><li>A Website Domain/Name</li><li>A server to host the website</li><li>Wordpress Installation the Dev Ops Way</li><li>Wordpress Installation the Hard Way</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>Why Wordpress?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>As a fan of free, you can't get any better than FOSS (Free and Open Source Software). Wordpress is a completely free and will always be free. The software is&nbsp;<strong>free</strong>&nbsp;to download and&nbsp;<strong>free</strong>&nbsp;to use in any way you want to, we just have to learn how to set it up and use it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You could run Wordpress on an old spare computer(FREE!), a RaspberryPi(FREE!), or a server/cloud($50-$90) and get a completely solid website for yourself with a little know how. By the end of this article you should be able to deploy it on any of these options.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":63,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://fdlme.000webhostapp.com/wp-content/uploads/2021/04/wordpress-pie-chart-1024x576.jpg" alt="" class="wp-image-63"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"33.33%"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:paragraph -->
+<p>WordPress powers&nbsp;<strong>more than 37% of all websites</strong> [<a href="https://www.searchenginejournal.com/wordpress-powers-39-5-of-all-websites/391647/#:~:text=WordPress%20is%20now%20powering%2039.5,a%20market%20share%20of%2064.1%25." target="_blank" rel="noreferrer noopener">Source</a>], which makes it by far the most popular way to build a website.It is one of the most popular CMS (Content Management Systems); a CMS allows you to make changes to the website without having to learn HTML and Code.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"id":62,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://fdlme.000webhostapp.com/wp-content/uploads/2021/04/wordpress-vs-world-1024x615.jpg" alt="" class="wp-image-62"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://ahrefs.com/blog/wp-content/uploads/2021/03/07-seo-basics.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:paragraph -->
+<p>I recommend Wordpress over competitors such as Wix, SquareSpace, and pretty much everything else out there. Wix and SquareSpace can only be used and hosted on their own websites and are not opensource. Wordpress has an extensive amount of plugins to help get things done and developers are abundant if you ever want to develop something serious. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3>1. Purchasing a Domain Name ...but First How GoDaddy Can Fuck OFF!</h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://img.dtcn.com/image/digitaltrends/godaddy-boycott-2-1200x630-c-ar1.91.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>I usually ask customers what they have in mind for a website and they usually reply with "Oh I was just going to use GoDaddy". Yeah, you shouldn't use GoDaddy for anything ever and while we are at it you shouldn't use any of these as well. <a rel="noreferrer noopener" href="https://researchasahobby.com/full-list-eig-hosting-companies-brands/" target="_blank">A FULL LIST OF EIG COMPANIES TO AVOID WHILE AVOIDING GODADDY</a> and a <a href="https://www.reddit.com/r/webhosting/comments/dwa8p8/godaddy_avoid_like_the_plague/" target="_blank" rel="noreferrer noopener">REDDIT HORROR STORY on SUPPORT</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>GoDaddy is a nightmare of a company that practices all the predatory tactics that you have probably never heard of. Heres a quick recap of why they're awful.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>They have been known to make billing harder, charge for things like free SSL Certs, and setting limits then charging you for going past it. <a rel="noreferrer noopener" href="https://www.reddit.com/r/webhosting/comments/h9k6wo/the_number_of_godaddy_scams_is_too_damn_high/fuxsbyv/" target="_blank">Reddit Link</a></li><li>If you purchase a domain from them, they can increase the price of hosting and domain renewal by hundreds of dollars if your website becomes popular. </li><li><strong>Friends dont let friends use GoDaddy</strong>, here is another <a rel="noreferrer noopener" href="https://www.reddit.com/r/Entrepreneur/comments/cz6su7/avoid_godaddy_like_the_plague/" target="_blank">Reddit Link</a> Bashing GoDaddy in more detail.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3>How to actually Buy a Domain</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The best options to purchase a Domain Name/ Website Name: </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>On the same server you are going to use</li><li><a href="https://domains.google/" target="_blank" rel="noreferrer noopener">Google Domains</a></li><li><a href="https://www.namecheap.com/" target="_blank" rel="noreferrer noopener">Namecheap</a></li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2>2. Servers? </h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A server is just a computer so there is nothing to be confused about.  I start with the self hosting option because it is free, the link section will have a tutorial on setting up the stack on it. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A paid server will have the technology stack already installed and usually offer 1 click or easy installs for Wordpress. The link will have the companies pricing chart for web hosting.  I like using these hosts personally. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I Think Veerotech has great support, standard pricing, and lots of features so I usually recommend that.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><tbody><tr><td>Server</td><td>Link</td><td>Price</td></tr><tr><td>Your PC</td><td></td><td>Free</td></tr><tr><td>RPI4</td><td><a rel="noreferrer noopener" target="_blank" href="https://www.amazon.com/gp/product/B07BC7BMHY/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B07BC7BMHY&amp;linkCode=as2&amp;tag=crnl-20&amp;linkId=7c76c8db2ff6aa220298757105b2c4b1">Affiliate Link: Raspberry Pi 3 B+ with Clear Case and Power Supply</a></td><td>$50 one time</td></tr><tr><td>AWS Lightsail</td><td>https://aws.amazon.com/lightsail/pricing/</td><td></td></tr><tr><td>Veerotech</td><td>https://www.veerotech.net/shared-hosting</td><td>$75/year</td></tr><tr><td>NameCheap</td><td>https://www.namecheap.com/hosting/shared/</td><td>$40/year</td></tr><tr><td>000WebHost</td><td>https://www.000webhost.com/cheap-web-hosting</td><td>Free to start<br>$90 after <br>1 year</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:heading -->
+<h2>Wordpress The Easy Way</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wordpress</p>
+<!-- /wp:paragraph -->
