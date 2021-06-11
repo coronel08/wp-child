@@ -11,7 +11,7 @@ Libraries: Bootstrap, Google Fonts, FontAwesome
 
 <b>Myspace Theme</b>
 
-Look into bravada theme or the [avada theme](https://avada.theme-fusion.com/information-technology/)
+Look into bravada theme or the [avada theme](https://avada.theme-fusion.com/information-technology/) same one used by fcnetworks. clone template
 
 twentychild; A child theme of twentytwentyone to practice making my own theme
 [How to add new block patterns or template](#https://kinsta.com/blog/twenty-twenty-one-theme/#how-to-build-a-child-theme-on-twenty-twentyone)<br>
