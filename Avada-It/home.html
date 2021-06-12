@@ -13,16 +13,18 @@
     <!-- Font-Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- AOS/ Animate on Scroll library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         header {
             width: 100%;
             height: 90vh;
-            background-image: url("static/avada-it-clouds1.webp")
+            background-image: url("static/avada-it-clouds1.webp");
         }
 
         .it-section {
-            background-image: url("static/avada-it-section-bg.webp")
+            background-image: url("static/avada-it-section-bg.webp");
         }
 
         .icon {
@@ -34,7 +36,7 @@
             max-height: 100px;
         }
 
-        .icon:hover{
+        .icon:hover {
             background-color: #d936b5;
         }
     </style>
@@ -69,7 +71,7 @@
     <!-- Header section with background -->
     <header>
         <div class="container-fluid">
-            <div class="row pt-5">
+            <div class="row py-5">
                 <div class="row text-center align-items-center">
                     <div class="col-lg-4 offset-lg-2 pb-2">
                         <h2>The Solution</h2>
@@ -91,55 +93,55 @@
         </div>
     </header>
 
-    <!-- Under Header with cloud vector art -->
+    <!-- Under Header with cloud vector art, using animate on scroll library -->
     <section>
         <div class="container">
             <div class="row ">
                 <div class="col">
-                    <img src="static/cloud-logo-320x202.webp" alt="">
-                    <img src="static/Vector-Smart-Object-1-1-320x202.webp" alt="">
-                    <img src="static/Vector-Smart-Object-3-1-320x202.webp" alt="">
-                    <img src="static/Vector-Smart-Object-2-1-320x202.webp" alt="">
+                    <img src="static/cloud-logo-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="10" data-aos-easing="ease-in-out">
+                    <img src="static/Vector-Smart-Object-1-1-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="100" data-aos-easing="ease-in-out">
+                    <img src="static/Vector-Smart-Object-3-1-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="200" data-aos-easing="ease-in-out">
+                    <img src="static/Vector-Smart-Object-2-1-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="250" data-aos-easing="ease-in-out">
                 </div>
             </div>
-
         </div>
     </section>
 
+
     <!-- It Section with background -->
-    <section class="it-section">
+    <section class="it-section text-white">
         <div class="container it-section py-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center px-2">
                 <div class="col-lg-6 text-center">
                     <h3>Services Offered</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dicta possimus adipisci
                         voluptatibus id atque quo quod expedita quos ratione laborum cum quae quis eveniet pariatur
                         aspernatur odit. Iusto, temporibus.</p>
                     <ul class="list-group">
-                        <li class="text-white list-unstyled">
+                        <li class="list-unstyled">
                             <p><strong>Cloud Based</strong> – ut enim ad minimveniam quis nostrud</p>
                         </li>
-                        <li class="text-white list-unstyled">
+                        <li class="list-unstyled">
                             <p><strong>Any Device</strong> – ut enim ad minimveniam quis nostrud</p>
                         </li>
-                        <li class="text-white list-unstyled">
+                        <li class="list-unstyled">
                             <p><strong>Single sign in</strong> – ut enim ad minimveniam quis nostrud</p>
                         </li>
-                        <li class="text-white list-unstyled">
+                        <li class="list-unstyled">
                             <p><strong>Disaster recovery</strong> – ut enim ad minimveniam quis nostrud</p>
                         </li>
-                        <li class="text-white list-unstyled">
+                        <li class="list-unstyled">
                             <p><strong>Real-time backups</strong> – ut enim ad minimveniam quis nostrud</p>
                         </li>
                     </ul>
                 </div>
                 <!-- Font Awesome Icon Section -->
-                <div class="col-lg-6 text-center text-white">
+                <div class="col-lg-6 text-center">
                     <div class="row py-4">
                         <div class="col-4 icon">
                             <i class="fas fa-cloud-upload-alt fa-5x"></i>
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" data-aos="flip-down" data-aos-delay="100" data-aos-easing="ease-in-out">
                             <h3>Test</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eligendi eaque beatae
                                 aut dolore minus suscipit sint magnam nihil voluptatem adipisci quia, molestiae id
@@ -150,7 +152,7 @@
                         <div class="col-4 icon">
                             <i class="fas fa-user-lock fa-5x"></i>
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" data-aos="flip-down" data-aos-delay="100" data-aos-easing="ease-in-out">
                             <h3>Test</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eligendi eaque beatae
                                 aut dolore minus suscipit sint magnam nihil voluptatem adipisci quia, molestiae id
@@ -161,7 +163,7 @@
                         <div class="col-4 icon">
                             <i class="far fa-window-restore fa-5x"></i>
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" data-aos="flip-down" data-aos-delay="100" data-aos-easing="ease-in-out">
                             <h3>Test</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eligendi eaque beatae
                                 aut dolore minus suscipit sint magnam nihil voluptatem adipisci quia, molestiae id
@@ -170,9 +172,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
