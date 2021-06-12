@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- AOS/ Animate on Scroll library  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylsheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         header {
             width: 100%;
@@ -25,6 +24,10 @@
 
         .it-section {
             background-image: url("static/avada-it-section-bg.webp");
+        }
+
+        .about-us {
+            background-image: url("static/it_graph-1.webp")
         }
 
         .icon {
@@ -66,9 +69,7 @@
                 </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Header section with background -->
+    </nav <!-- Header section with background -->
     <header>
         <div class="container-fluid">
             <div class="row py-5">
@@ -78,7 +79,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem assumenda, temporibus hic
                             itaque
                             fuga illum esse aperiam modi eum eligendi. Corporis delectus in, obcaecati quis culpa harum
-                            blanditiis necessitatibus cumque. eligendi. Corporis delectus in, obcaecati quis culpa harum
+                            bladitiis necessitatibus cumque. eligendi. Corporis delectus in, obcaecati quis culpa harum
                             blanditiis necessitatibus cumque.
                         </p>
                         <button class="btn btn-warning btn-lg" type="button">
@@ -98,10 +99,14 @@
         <div class="container">
             <div class="row ">
                 <div class="col">
-                    <img src="static/cloud-logo-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="10" data-aos-easing="ease-in-out">
-                    <img src="static/Vector-Smart-Object-1-1-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="100" data-aos-easing="ease-in-out">
-                    <img src="static/Vector-Smart-Object-3-1-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="200" data-aos-easing="ease-in-out">
-                    <img src="static/Vector-Smart-Object-2-1-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="250" data-aos-easing="ease-in-out">
+                    <img src="static/cloud-logo-320x202.webp" alt="" data-aos="flip-down" data-aos-delay="10"
+                        data-aos-easing="ease-in-out">
+                    <img src="static/Vector-Smart-Object-1-1-320x202.webp" alt="" data-aos="flip-down"
+                        data-aos-delay="100" data-aos-easing="ease-in-out">
+                    <img src="static/Vector-Smart-Object-3-1-320x202.webp" alt="" data-aos="flip-down"
+                        data-aos-delay="200" data-aos-easing="ease-in-out">
+                    <img src="static/Vector-Smart-Object-2-1-320x202.webp" alt="" data-aos="flip-down"
+                        data-aos-delay="250" data-aos-easing="ease-in-out">
                 </div>
             </div>
         </div>
@@ -117,9 +122,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dicta possimus adipisci
                         voluptatibus id atque quo quod expedita quos ratione laborum cum quae quis eveniet pariatur
                         aspernatur odit. Iusto, temporibus.</p>
-                    <ul class="list-group">
-                        <li class="list-unstyled">
-                            <p><strong>Cloud Based</strong> – ut enim ad minimveniam quis nostrud</p>
+                    <ul class="list-group" <li class="list-unstyled">
+                        <p><strong>Cloud Based</strong> – ut enim ad minimveniam quis nostrud</p>
                         </li>
                         <li class="list-unstyled">
                             <p><strong>Any Device</strong> – ut enim ad minimveniam quis nostrud</p>
@@ -175,10 +179,46 @@
         </div>
     </section>
 
+    <section class="about-section">
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <h3>About Us</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto provident fugiat ab
+                        perferendis voluptatem cupiditate saepe beatae. Cum mollitia deleniti molestiae delectus odio
+                        soluta tempora optio earum sapiente eum.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <i class="fas fa-shield-alt fa-3x"></i>
+                            <h4>Security</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus voluptatem praesentium
+                                error sequi iure beatae fugit, minus impedit delectus corporis natus alias aliquam
+                                tempora modi. Optio officiis soluta pariatur quas?</p>
+                        </div>
+                        <div class="col-6">
+                            <i class="fas fa-rocket fa-3x"></i>
+                            <h4>Performance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat dolorem
+                                reprehenderit fuga iste voluptate tempora animi vitae esse suscipit dolorum amet unde
+                                tempore omnis, eligendi consequuntur, at officiis eos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <img src="static/iPad-Pro-Space-Silver.png" alt="" class="img-fluid p-3">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat exercitationem amet
+                        excepturi. Dolorum aut illum error magni doloremque tempore. Repellat sint cumque magni
+                        laudantium maiores suscipit eius veniam itaque?</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
 </body>
