@@ -47,11 +47,11 @@
         Add shadow to FontAwesome Icon 
         https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/
         */
-        .icon i{
+        .icon i {
             filter: drop-shadow(3px 10px 2px rgb(0 0 0 / 0.4));
         }
 
-        .footer{
+        .footer-break {
             background-image: url("static/avada-it-call-to-action-bg.webp");
             height: 300px;
         }
@@ -192,6 +192,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section class="about-section">
         <div class="container-fluid p-3">
             <div class="row align-items-center">
@@ -222,25 +223,113 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat exercitationem amet
                         excepturi. Dolorum aut illum error magni doloremque tempore. Repellat sint cumque magni
                         laudantium maiores suscipit eius veniam itaque?</p>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="footer">
+    <!-- Pre-footer with image and text -->
+    <section class="footer-break">
         <div class="container-fluid p-5">
             <div class="row text-center align-items-center text-white">
-                <div class="col">
+                <div class="col-md-6">
                     <h3 class="display-1">Cloud</h3>
                     <h3 class="display-3">King</h3>
                 </div>
-                <div class="col">
+                <div class="col-md-6 text-md-start pt-3">
                     <button type="button" class="btn btn-primary btn-lg">Get Started</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer section -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <!-- Font Awesome Icon links in footer -->
+            <section class="mb-4 d-flex justify-content-between">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+
+            <!-- Form signup Newsletter, missing label -->
+            <section>
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p>Sign up for our Newsletter</p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white">
+                                <input type="email" class="form-control col-8" id="form1" placeholder="email@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-light">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Lorem filler text -->
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est, nobis doloremque harum voluptas
+                    alias mollitia sint quidem voluptate suscipit voluptatum nulla quibusdam officia! Nesciunt quibusdam
+                    ab placeat atque cumque.</p>
+            </section>
+
+            <!-- Links on the bottom -->
+            <section>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
