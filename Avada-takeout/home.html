@@ -22,9 +22,15 @@
             background-size: cover;
             background-position: center;
         }
-        .header-text{
-            padding-top: 130px;
+
+        .header-text {
+            padding-top: 20vh;
         }
+
+        .mt-n {
+            margin-top: -2.5rem !important;
+        }
+
     </style>
 </head>
 
@@ -35,8 +41,8 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <!-- Navbar Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="https://avada.theme-fusion.com/information-technology/wp-content/uploads/sites/81/2016/11/avada-it-logo.png"
-                        alt="" width="" height="" class="d-inline-block align-text-top">
+                    <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="30"
+                        height="30" class="d-inline-block align-text-top">
                     Bootstrap
                 </a>
                 <!-- Navbar toggler -->
@@ -72,18 +78,79 @@
                 </div>
             </nav>
         </div>
+
+        <!-- Header section text, with button for view menu -->
         <section class="text-warning header-text">
-            <div class="row align-self-center m-0">
-                <div class="col-6 col-lg-4 offset-sm-2 align-self-center">
+            <div class="row m-0">
+                <div class="col-6 col-lg-4 offset-sm-2">
                     <h1 class="display-1">Burgers</h1>
-                    <h4 class="display-3">and</h4>
-                    <h4 class="display-1">Beers</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nulla? Aspernatur suscipit earum fuga, voluptate veniam ut officia eum iste ex culpa rerum iure sed necessitatibus inventore corporis? Aspernatur, perspiciatis?</p>
+                    <h3 class="display-3">and</h3>
+                    <h1 class="display-1">Beers</h1>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-danger btn-lg rounded-pill" type="button">View Menu</button>
+                    </div>
                 </div>
             </div>
         </section>
     </header>
 
+    <!-- Font Awesome Icon Section overlapping header -->
+    <section>
+        <div class="container d-none d-sm-block">
+            <div class="row">
+                <div class="mx-auto col-10 border border-warning border-5 p-3 mt-n bg-light">
+                    <div class="d-flex justify-content-between">
+                        <i class="fas fa-clock fa-1x">24/7 Delivery</i>
+                        <i class="fas fa-hamburger">Yummy</i>
+                        <i class="fas fa-car">Delivery</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular items section -->
+    <section>
+        <div class="container p-5 text-center">
+            <div class="row">
+                <div class="col">
+                    <h3 class="display-1">Popular Items</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae tempore illum dolor
+                        molestias, aliquam necessitatibus vel fuga dicta cum harum, at ex quos expedita similique ipsa
+                        quia beatae obcaecati odio.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://avada.theme-fusion.com/takeout/wp-content/uploads/sites/136/2020/04/skin-on-fries.jpg" alt="" class="img-fluid">
+                            <h3>Fries - $4</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://avada.theme-fusion.com/takeout/wp-content/uploads/sites/136/2020/04/choco-cookie-frappe.jpg" alt="" class="img-fluid">
+                            <h3>Milkshake - $5</h3>
+                        </div>                    
+                        <div class="col-md-4">
+                            <img src="https://avada.theme-fusion.com/takeout/wp-content/uploads/sites/136/2020/04/donut-burger.jpg" alt="" class="img-fluid">
+                            <h3>Burger - $10</h3>
+                        </div>
+                    </div>
+                    <!-- View menu button -->
+                    <div class="d-grid gap-2 col-6 mx-auto m-2">
+                        <button class="btn btn-danger btn-lg rounded-pill" type="button">View Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section>
+        <div class="contain">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
