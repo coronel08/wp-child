@@ -11,6 +11,19 @@ Libraries: Bootstrap, Google Fonts, FontAwesome
 
 <b>Myspace Theme</b>
 ![](./myspace/static/photos/myspace.png)
+Be sure to add this to wordpress deployment folder/file sass/main.scss
+```
+.modal-backdrop {
+    display: none;
+    z-index: 1040 !important;
+}
+
+.modal-content {
+    margin: 2px auto;
+    z-index: 1100 !important;
+}
+```
+
 
 
 Look into bravada theme or the [avada theme](https://avada.theme-fusion.com/information-technology/) same one used by fcnetworks. clone template
