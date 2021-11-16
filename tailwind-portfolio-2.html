@@ -12,45 +12,199 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Inspo https://nadiaux.design/index.html -->
+
+    <style>
+        * {}
+
+        .bg-blue-1000 {
+            background-color: #153956;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        .fas,.fab {
+            color: rgb(246 164 165);
+        }
+
+        .exp-text{
+            color:rgb(191 219 253);
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 
 <body>
-    <wrapper class="flex flex-col min-h-screen justify-between container mx-auto">
-        <nav class="flex md:justify-between items-center h-24 w-full bg-blue-900">
-            <p class="text-white m-12">Logo</p>
-            <div class="flex gap-8 text-blue-200">
+    <wrapper class="flex flex-col min-h-screen lg:container mx-auto bg-blue-1000">
+
+        <!-- Header Section -->
+        <nav class="md:flex md:justify-between items-center h-24 w-full">
+            <p class="text-white md:m-12 text-center mt-4">
+                Logo
+            </p>
+            <div class="hidden md:flex gap-8 text-blue-200">
                 <p class="">Test</p>
                 <p class="">Test2</p>
                 <p class="">Test3</p>
             </div>
-            <div class="flex gap-8 mr-8 text-blue-200">
+            <div class="flex gap-8 mr-8 m-4 text-blue-200 justify-between">
                 <p>icon</p>
                 <p>icon</p>
                 <p>icon</p>
             </div>
-            
+
 
         </nav>
 
 
-        <section class="flex">
-            <div class= "h-1/2 w-1/2 bg-blue-100">
-                <p>Test</p>
-            </div>
-            <div class="h-1/2 w-1/2 bg-blue-200">
-                <p>Test</p>
-            </div>
-            <div class="h-1/2 w-1/2 bg-blue-300">
-                <p>Test</p>
+        <!-- First Section About and Photo -->
+        <section>
+            <div class="flex flex-col md:flex-row">
+
+                <!-- About Section -->
+                <div class="w-full md:w-2/3 order-2 z-30">
+                    <div class="-mt-80 md:mt-12 lg:mt-32 p-4 md:p-8 lg:px-36">
+                        <h1 class="text-xl md:text-4xl text-red-300 font-bold font-sans">
+                            I'm Fidel Coronel: Full Stack Web Dev
+                        </h1>
+                        <p class="pt-4 md:pt-10 text-lg exp-text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit.
+                            Veritatis quibusdam dolore ut soluta
+                            facilis id et ad commodi quam quo veniam aut necessitatibus error nobis at, quidem
+                            voluptates
+                            impedit labore.
+                            similique, tenetur optio maiores alias laudantium.
+                        </p>
+                        <!-- Buttons -->
+                        <div class="my-8 mx-24 block">
+                            <button class="relative bg-red-300 py-4 px-16 rounded font-semibold">
+                                Test
+                            </button>
+                            <button class="block -mt-10 -ml-3 bg-gray-700 py-7 px-20 rounded"> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Section -->
+                <div class="w-full md:w-1/3 relative order-1 md:order-3 overflow-hidden">
+                    <div class="lg:mt-20">
+                        <img class="absolute ml-10 mt-10 rounded-full w-60" src="./myspace/static/photos/menk.jpg"
+                            alt="fidel c">
+                        <img class="max-w-2xl" src="./myspace/static/photos/meteorite_bg1.svg" alt="bg">
+                    </div>
+                </div>
             </div>
 
+            <!-- Links -->
+            <div class="flex flex-wrap gap-6 mb-4 md:mb-10 ml-4 md:ml-10 lg:ml-40">
+                <img class="h-16"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+                    alt="">
+                <img class="h-16"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png"
+                    alt="">
+                <img class="h-16"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                    alt="">
+                <img class="h-16"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                    alt="">
+                <img class="h-16"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/AWS_Simple_Icons_AWS_Cloud.svg/1024px-AWS_Simple_Icons_AWS_Cloud.svg.png"
+                    alt="">
+                <img class="h-16"
+                    src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" alt="">
+                <img class="h-16"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+                    alt="">
+            </div>
         </section>
 
-        <footer class="flex h-20 w-full bg-blue-900">
+        <!-- Experience Section -->
+        <section>
+            <div class="p-8 lg:ml-52">
+                <p class="text-red-300 font-semibold text-xl">Experienced In:</p>
+            </div>
+            <!-- FontAwesome Icons Section -->
+            <div class="flex flex-wrap gap-12 p-4 justify-center lg:px-60">
+                <div class=" w-80">
+                    <div class="text-center font-bold">
+                        <i class="fas fa-funnel-dollar fa-5x text-red-200"></i>
+                        <h4 class=""> Digital Marketing </h4>
+                    </div>
+                    <p class="md:p-2 exp-text">SEO, Adwords, Email Campaigns, E Commerce, and FBA Amazon</p>
+                </div>
+                <div class="w-80">
+                    <div class="text-center font-bold">
+                        <i class="fas fa-laptop-code fa-5x text-red-200"></i>
+                        <h4 class=""> Web Development</h4>
+                    </div>
+                    <p class="md:p-2 exp-text">Developing sites with popular frameworks like React, Wordpress, Shopify, Magento
+                        and plain HTML/CSS.</p>
+                </div>
+                <div class="w-80">
+                    <div class="text-center font-bold ">
+                        <i class="fas fa-pencil-alt fa-5x text-red-200"></i>
+                        <h4 class=""> UI/UX Frontend </h4>
+                    </div>
+                    <p class="md:p-2 exp-text">Creating delightful user experiences using HTML, CSS, Javascript with popular
+                        libraries such as Bootstrap, Tailwind, and FontAwesome</p>
+                </div>
+                <div class="w-80">
+                    <div class="text-center font-bold ">
+                        <i class="fas fa-terminal fa-5x text-red-200"></i>
+                        <h4> Code </h4>
+                    </div>
+                    <p class="md:p-2 exp-text">Backend and Frontend projects that have involved Databases, Servers, Hosting, CDN's, API Development, and many other technologies </p>
+                </div>
+                <div class="w-80">
+                    <div class="text-center font-bold">
+                        <i class="fas fa-ambulance fa-5x"></i>
+                        <h4>IT Support</h4>
+                    </div>
+                    <p class="md:p-2 exp-text">Support in projects ranging from VOIP/PBX, Networking(VLANS,DMZ,VPN), Security(Firewall, Network
+                        Segmentation, Reverse proxy), Migrations, and Cloud Integration
+                    </p>
+                </div>
+            </div>
+        </section>
 
+
+        <!-- Grid -->
+        <section>
+            <div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section>
+            <div class="flex justify-between p-4">
+                <div class="">
+                    <h4>Email:</h4>
+                    <p class="text-white">
+                        <a href="mailto: coronel08@aol.com">coronel08@aol.com</a>
+                    </p>  
+                </div>
+                <div class="">
+                    <h4>Social:</h4>
+                    <i class="fab fa-github fa-lg p-2"></i>
+                    <i class="fab fa-linkedin fa-lg p-2"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="flex items-center h-10 w-full">
+            <p class="mx-auto">Built with Tailwind</p>
         </footer>
     </wrapper>
 
 </body>
-
 </html>
