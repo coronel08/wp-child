@@ -15,29 +15,29 @@
     <!-- Inspo https://nadiaux.design/index.html -->
 
     <style>
-        * {}
-
-        .bg-blue-1000 {
+        * {
+            color: rgb(191 219 253);
+            font-family: 'Courier New', Courier, monospace;
             background-color: #153956;
+        }
+
+        .sec-color-border {
+            border: 8px solid #002e4d;
         }
 
         h4 {
             color: white;
         }
 
-        .fas,.fab {
+        .fas,
+        .fab {
             color: rgb(246 164 165);
-        }
-
-        .exp-text{
-            color:rgb(191 219 253);
-            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 </head>
 
 <body>
-    <wrapper class="flex flex-col min-h-screen lg:container mx-auto bg-blue-1000">
+    <wrapper class="flex flex-col min-h-screen lg:container mx-auto">
 
         <!-- Header Section -->
         <nav class="md:flex md:justify-between items-center h-24 w-full">
@@ -69,7 +69,7 @@
                         <h1 class="text-xl md:text-4xl text-red-300 font-bold font-sans">
                             I'm Fidel Coronel: Full Stack Web Dev
                         </h1>
-                        <p class="pt-4 md:pt-10 text-lg exp-text">
+                        <p class="pt-4 md:pt-10 text-lg">
                             Lorem ipsum dolor sit amet consectetur
                             adipisicing
                             elit.
@@ -86,6 +86,8 @@
                             </button>
                             <button class="block -mt-10 -ml-3 bg-gray-700 py-7 px-20 rounded"> </button>
                         </div>
+                        <div class="sec-color-border w-full h-2 md:my-24"></div>
+
                     </div>
                 </div>
 
@@ -98,6 +100,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- Links -->
             <div class="flex flex-wrap gap-6 mb-4 md:mb-10 ml-4 md:ml-10 lg:ml-40">
@@ -136,14 +139,15 @@
                         <i class="fas fa-funnel-dollar fa-5x text-red-200"></i>
                         <h4 class=""> Digital Marketing </h4>
                     </div>
-                    <p class="md:p-2 exp-text">SEO, Adwords, Email Campaigns, E Commerce, and FBA Amazon</p>
+                    <p class="md:p-2">SEO, Adwords, Email Campaigns, E Commerce, and FBA Amazon</p>
                 </div>
                 <div class="w-80">
                     <div class="text-center font-bold">
                         <i class="fas fa-laptop-code fa-5x text-red-200"></i>
                         <h4 class=""> Web Development</h4>
                     </div>
-                    <p class="md:p-2 exp-text">Developing sites with popular frameworks like React, Wordpress, Shopify, Magento
+                    <p class="md:p-2">Developing sites with popular frameworks like React, Wordpress, Shopify,
+                        Magento
                         and plain HTML/CSS.</p>
                 </div>
                 <div class="w-80">
@@ -151,7 +155,8 @@
                         <i class="fas fa-pencil-alt fa-5x text-red-200"></i>
                         <h4 class=""> UI/UX Frontend </h4>
                     </div>
-                    <p class="md:p-2 exp-text">Creating delightful user experiences using HTML, CSS, Javascript with popular
+                    <p class="md:p-2">Creating delightful user experiences using HTML, CSS, Javascript with
+                        popular
                         libraries such as Bootstrap, Tailwind, and FontAwesome</p>
                 </div>
                 <div class="w-80">
@@ -159,14 +164,16 @@
                         <i class="fas fa-terminal fa-5x text-red-200"></i>
                         <h4> Code </h4>
                     </div>
-                    <p class="md:p-2 exp-text">Backend and Frontend projects that have involved Databases, Servers, Hosting, CDN's, API Development, and many other technologies </p>
+                    <p class="md:p-2">Backend and Frontend projects that have involved Databases, Servers,
+                        Hosting, CDN's, API Development, and many other technologies </p>
                 </div>
                 <div class="w-80">
                     <div class="text-center font-bold">
                         <i class="fas fa-ambulance fa-5x"></i>
                         <h4>IT Support</h4>
                     </div>
-                    <p class="md:p-2 exp-text">Support in projects ranging from VOIP/PBX, Networking(VLANS,DMZ,VPN), Security(Firewall, Network
+                    <p class="md:p-2">Support in projects ranging from VOIP/PBX, Networking(VLANS,DMZ,VPN),
+                        Security(Firewall, Network
                         Segmentation, Reverse proxy), Migrations, and Cloud Integration
                     </p>
                 </div>
@@ -176,8 +183,49 @@
 
         <!-- Grid -->
         <section>
-            <div>
+            <div class="grid grid-cols-3 p-6">
+                <!-- Project Selection -->
+                <div class="col-span-12 sec-color-border">
+                    <div class="flex flex-wrap gap-4 md:gap-8 p-2 justify-center">
+                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
+                            Venues
+                        </p>
+                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
+                            Quiz
+                        </p>
+                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white"> 
+                            Yelp API
+                        </p>
+                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white"> 
+                            Project4
+                        </p>
+                    </div>
+                </div>
 
+
+                <!-- Left Side -->
+                <div class="col-span-12 md:col-span-1">
+                    <div class="sec-color-border">
+                        <p>Photo</p>
+                        <img id="proj-photo" class="flex" src=""></img>
+                    </div>
+                    <div class="h-40 sec-color-border">
+                        <p>Built With</p>
+                        <div id="proj-built" class="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Right Side -->
+                <div class="col-span-12 md:col-span-2 h-full sec-color-border">
+                    <p class="underline">About</p>
+                    <div id="proj-about">
+                        <p>Project</p>
+
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -189,7 +237,7 @@
                     <h4>Email:</h4>
                     <p class="text-white">
                         <a href="mailto: coronel08@aol.com">coronel08@aol.com</a>
-                    </p>  
+                    </p>
                 </div>
                 <div class="">
                     <h4>Social:</h4>
@@ -206,5 +254,66 @@
         </footer>
     </wrapper>
 
+
+    <script>
+        let projData = [
+            {
+                project: "Venues",
+                photo: "https://fcoronel.com/images/conertzone.png",
+                built: [
+                    '<i class="fab fa-node fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>',
+                    '<i class="fas fa-database fa-3x"></i>'
+                ],
+                about: "Using MongoDB for DB and the Node framework, Express, as server handling backend such as authentication as well as frontend using EJS templates. Practiced cloud deployment, hosted on Heroku and also using Mongo Atlas as a cloud based Database."
+            },
+            {
+                project: "Quiz",
+                photo: "https://raw.githubusercontent.com/coronel08/wp-child/main/myspace/static/photos/flashcard.gif",
+                built: [
+                    '<i class="fab fa-docker fa-3x"></i>',
+                    '<i class="fab fa-python fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-css3-alt fa-3x"></i>'
+                ],
+                about: "A full stack quiz app. The backend, admin, API, and database modeling done in Django. The frontend parses the json api and uses the framework to organize the html and visual components as well as the interactive javascript components."
+            },
+            {
+                project: "Yelp API",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                    ],
+                about: "A simple solution for when you don't want to think about what's for lunch. Uses React/Next as the frontend for the yelp API. Deployed to vercel"
+            }
+        ]
+
+
+
+        let projSelector = document.querySelectorAll("#proj-selector")
+        let projAbout = document.querySelector("#proj-about")
+        let projPhoto = document.querySelector("#proj-photo")
+        let projBuiltWith = document.querySelector("#proj-built")
+
+        // Project Selector Section
+        for (proj of projSelector) {
+            proj.addEventListener("click", e => {
+                console.log(e.target)
+
+                // projAbout.innerText = e.target.innerText
+                let test = projData.filter(p => p.project == e.target.innerText)
+
+                projAbout.innerText = test[0].about
+                projPhoto.src = test[0].photo
+                projBuiltWith.innerHTML = test[0].built
+                projBuiltWith.innerHTML.replace(",",'')
+            })
+        }
+    </script>
+
 </body>
+
 </html>
