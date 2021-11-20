@@ -22,6 +22,13 @@
             background-color: #153956;
         }
 
+        .project-box {
+            background-color: #002e4d;
+            border: 2px solid rgb(246 164 165);
+            font-weight: bold;
+            border-radius: 0.25rem;
+        }
+
         .sec-color-border {
             border: 8px solid #002e4d;
         }
@@ -33,6 +40,10 @@
         .fas,
         .fab {
             color: rgb(246 164 165);
+        }
+
+        .actv {
+            border: 6px solid aquamarine;
         }
     </style>
 </head>
@@ -180,61 +191,86 @@
                     </p>
                 </div>
             </div>
+
+            <!-- Middle blue bar -->
+            <div class="sec-color-border w-full h-2 my-6 lg:my-32"></div>
+
         </section>
 
 
-        <!-- Grid -->
+        <!-- New Grid Work Experience -->
         <section>
-            <div class="grid grid-cols-3 p-6 lg:mt-20">
-                <div class="col-span-2"></div>
-                <div class="h-1 bg-red-200">
+            <div class="grid grid-cols-3 p-6">
 
-                </div>
-
-                <!-- Project Selection -->
+                <!-- Header -->
                 <div class="col-span-12 sec-color-border">
-                    <div class="flex flex-wrap gap-4 md:gap-8 p-2 justify-center">
-                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
-                            Venues
-                        </p>
-                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
-                            Quiz
-                        </p>
-                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white"> 
-                            Yelp API
-                        </p>
-                        <p id="proj-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white"> 
-                            Project4
-                        </p>
+                    <p>Work Experience</p>
+                </div>
+
+                <!-- Left side job selection -->
+                <div class="col-span-12 md:col-span-1 sec-color-border ">
+                    <div id="job" class="flex flex-row md:flex-col flex-wrap gap-4 md:gap-20 p-4 lg:mx-12 text-center">
+                        <button id="job-selector" class="bg-red-200 px-4 py-4 font-semibold rounded text-white actv">
+                            Freelance
+                        </button>
+                        <button id="job-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
+                            ALJ
+                        </button>
+                        <button id="job-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
+                            Reborn
+                        </button>
+                        <button id="job-selector" class="bg-red-200 px-6 py-4 font-semibold rounded text-white">
+                            Other
+                        </button>
                     </div>
                 </div>
 
+                <!-- Right side job duties -->
+                <div id="work" class="col-span-12 md:col-span-2 sec-color-border">
+                    <p id="work-about" class="p-1"> Lorem </p>
 
-                <!-- Left Side -->
-                <div class="col-span-12 md:col-span-1">
-                    <div class="sec-color-border">
-                        <p>Photo</p>
-                        <img id="proj-photo" class="flex" src=""></img>
-                    </div>
-                    <div class="h-40 sec-color-border">
-                        <p>Built With</p>
-                        <div id="proj-built" class="">
-                        </div>
-                    </div>
+                    <h4 id="prim-work" class="p-4 font-extrabold lg:text-3xl exp1">Primary Work</h4>
+                    <ul id="prim-duties" class="list-disc ml-12">
+                    </ul>
+
+                    <h4 id="sec-work" class="p-4 font-extrabold lg:text-3xl exp2">Secondary Work</h4>
+                    <ul id="sec-duties" class="list-disc ml-12">
+                    </ul>
                 </div>
-
-
-                <!-- Right Side -->
-                <div class="col-span-12 md:col-span-2 h-full sec-color-border">
-                    <p class="underline">About</p>
-                    <div id="proj-about">
-                        <p>Project</p>
-                    </div>
-                </div>
-                
+                <!-- Pink Stripe on bottom -->
                 <div class="col-span-12 h-1 bg-red-200"></div>
-                
+
             </div>
+        </section>
+
+
+        <!-- Project Container -->
+        <section>
+            <div class="mt-12 p-4">
+                <!-- Filter Buttons -->
+                <h4>Projects</h4>
+                <div id="filter-proj" class="flex flex-wrap place-content-center my-8 gap-4">
+                    <!-- Button -->
+                    <div class="project-box py-2 px-6">
+                        <button id="frontend"> Frontend </button>
+                    </div>
+                    <!-- Button -->
+                    <div class="project-box py-2 px-6">
+                        <button id="stack"> Full Stack </button>
+                    </div>
+                    <!-- Button -->
+                    <div class="project-box py-2 px-6">
+                        <button id="python"> Python </button>
+                    </div>
+                </div>
+
+                <!-- Project Card -->
+                <div class="flex flex-wrap gap-8 block place-content-center md:mx-20 lg:mx-40">
+                    <div id="projects" class="sec-color-border p-4">
+                        <p>Project One</p>
+                        <span class="tags">#Javascript</span>
+                    </div>
+                </div>
         </section>
 
 
@@ -263,7 +299,123 @@
     </wrapper>
 
 
+
+    <!-- Scripting JS -->
     <script>
+
+        // Data for work experience that changes upon click
+        let workData = [
+            {
+                job: "Freelance",
+                about: "Working as an Independent Contractor for IT services and Web Development. My largest client was Restraunt Brands International, where I serviced their So Cal chains, KFC and Taco Bell. I have continued to develop websites over the past few years for many other clients using HTML, CSS, and Javascript",
+                primWork: "Network & IT",
+                primDuties: [
+                    "Networking: Setup and Installation, Cabling, VLAN, DMZ, VPN, Access Points, Firewalls, Network Segmentation",
+                    "Server: Migrations, Cloud Integration, Shares(SMB/NFS), Hardware and Software troubleshooting, Linux and Windows, Raid, Backups",
+                    "PBX and VOIP using Softphones, Avaya, 3cx, and Five9 auto dialer"
+                ],
+                secWork: "Web Dev",
+                secDuties: [
+                    "Web Servers: Load Balancing(Application, Network), Apache, Nginx, Reverse Proxys, Port Forwarding",
+                    "Web Development: React, Wordpress, Magento, Shopify, Full Stack, Microservices, API Development Docker and Kubernetes"
+                ],
+            },
+            {
+                job: "ALJ",
+                about: "ALJ Work",
+                primWork: "Digital Marketing",
+                primDuties: [
+                    ": Setup and Installation, Cabling, VLAN, DMZ, VPN, Access Points, Firewalls, Network Segmentation",
+                    "SEO & Adwords: Research keywords, clients, and create a marketing funnel",
+                    "CRM Campaigns: Tracking the ROI of our marketing campaigns digital a"
+                ],
+                secWork: "Content Creation",
+                secDuties: [
+                    "HTML/CSS/JS: Make changes to website built on Magento E-Commerce framework",
+                    "Content: Created using Canva, Photoshop, Figma for digital campaigns(email, website) and physical(mailers, flyers, brochures)"
+                ],
+            },
+            {
+                job: "Reborn",
+                about: "Reborn Cabinets Work",
+                primWork: "Marketing Manager",
+                primDuties: [
+                    "Recruitment and Training: Setup and Installation, Cabling, VLAN, DMZ, VPN, Access Points, Firewalls, Network Segmentation",
+                    "Orn: Migrations, Cloud Integration, Shares(SMB/NFS), Hardware and Software troubleshooting, Linux and Windows, Raid, Backups",
+                    "Cabinet and VOIP using Softphones, Avaya, 3cx, and Five9 auto dialer"
+                ],
+                secWork: "IT",
+                secDuties: [
+                    "Tech Integration: Led the transition to digital lead captures that integrated into our CRM for an improved efficiency of 30%. Also integrated Five9 an automated call center dialer",
+                    "Support: Managed over 100 devices with Mobile Device Management system, onboarding setup for new employees on Microsoft AD and thinClient/ Remote Desktop",
+                    "HelpDesk: Assist the department with technical issues Audio/Visual, email, and general computer troubleshooting"
+                ],
+            },
+            {
+                job: "Other",
+                about: "Other Work",
+                primWork: "Other Marketing",
+                primDuties: [
+                    "Other: Setup and Installation, Cabling, VLAN, DMZ, VPN, Access Points, Firewalls, Network Segmentation",
+                    "Other2: Migrations, Cloud Integration, Shares(SMB/NFS), Hardware and Software troubleshooting, Linux and Windows, Raid, Backups",
+                    "PBX and VOIP using Softphones, Avaya, 3cx, and Five9 auto dialer"
+                ],
+                secWork: "Other",
+                secDuties: [
+                    "Other4 Servers: Load Balancing(Application, Network), Apache, Nginx, Reverse Proxys, Port Forwarding",
+                    "Other Development: React, Wordpress, Magento, Shopify, Full Stack, Microservices, API Development Docker and Kubernetes"
+                ],
+            },
+        ]
+
+        // Selectors for work experience
+        let workButtons = document.querySelectorAll("#job-selector")
+        let workAbout = document.querySelector("#work-about")
+        let primWork = document.querySelector("#prim-work")
+        let primDuties = document.querySelector("#prim-duties")
+        let secWork = document.querySelector("#sec-work")
+        let secDuties = document.querySelector("#sec-duties")
+
+        // Set Default Value Dynamically
+        workAbout.innerText = workData[0].about
+        primWork.innerText = workData[0].primWork
+        createList(workData[0].primDuties, primDuties)
+        secWork.innerText = workData[0].secWork
+        createList(workData[0].secDuties, secDuties)
+
+        // Work Experience highlight button, 
+        // Change inner content of html later
+        workButtons.forEach((workButton) => {
+            workButton.addEventListener("click", (e) => {
+                workButtons.forEach(item => item.classList.remove("actv"))
+                workButton.classList.add("actv")
+
+                let work = workData.filter(data => data.job == e.target.innerText)
+
+                workAbout.innerText = work[0].about
+                primWork.innerText = work[0].primWork
+                createList(work[0].primDuties, primDuties)
+                secWork.innerText = work[0].secWork
+                createList(work[0].secDuties, secDuties)
+            })
+        })
+
+        // Used to create list items for work experience 
+        function createList(arr, destination) {
+            destination.innerHTML = ""
+            arr.forEach((i) => {
+                let bulletPoint = document.createElement("li")
+                bulletPoint.innerHTML = i
+                destination.append(bulletPoint)
+            })
+        }
+
+
+
+
+
+
+        // Data for Projects sections
         let projData = [
             {
                 project: "Venues",
@@ -273,7 +425,8 @@
                     '<i class="fab fa-js fa-3x"></i>',
                     '<i class="fas fa-database fa-3x"></i>'
                 ],
-                about: "Using MongoDB for DB and the Node framework, Express, as server handling backend such as authentication as well as frontend using EJS templates. Practiced cloud deployment, hosted on Heroku and also using Mongo Atlas as a cloud based Database."
+                about: "Using MongoDB for DB and the Node framework, Express, as server handling backend such as authentication as well as frontend using EJS templates. Practiced cloud deployment, hosted on Heroku and also using Mongo Atlas as a cloud based Database.",
+                tags: "Full Stack"
             },
             {
                 project: "Quiz",
@@ -284,7 +437,8 @@
                     '<i class="fab fa-react fa-3x"></i>',
                     '<i class="fab fa-css3-alt fa-3x"></i>'
                 ],
-                about: "A full stack quiz app. The backend, admin, API, and database modeling done in Django. The frontend parses the json api and uses the framework to organize the html and visual components as well as the interactive javascript components."
+                about: "A full stack quiz app. The backend, admin, API, and database modeling done in Django. The frontend parses the json api and uses the framework to organize the html and visual components as well as the interactive javascript components.",
+                tags: "Full Stack"
             },
             {
                 project: "Yelp API",
@@ -294,31 +448,105 @@
                     '<i class="fab fa-react fa-3x"></i>',
                     '<i class="fab fa-yelp fa-3x"></i>',
                     '<i class="fab fa-js fa-3x"></i>'
-                    ],
-                about: "A simple solution for when you don't want to think about what's for lunch. Uses React/Next as the frontend for the yelp API. Deployed to vercel"
-            }
+                ],
+                about: "A simple solution for when you don't want to think about what's for lunch. Uses React/Next as the frontend for the yelp API. Deployed to vercel",
+                tags: "Full Stack"
+            },
+            {
+                project: "Lobo Security",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                ],
+                about: "",
+                tags: "Frontend"
+            },
+            {
+                project: "Myspace",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                ],
+                about: "",
+                tags: "Frontend"
+            },
+            {
+                project: "Burger",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                ],
+                about: "",
+                tags: "Frontend"
+            },
+            {
+                project: "Shopify",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                ],
+                about: "",
+                tags: "Frontend"
+            },
+            {
+                project: "HD Webscrape",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                ],
+                about: "",
+                tags: "Python"
+            },
+            {
+                project: "Twilio",
+                photo: "https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(132).jpg",
+                built: [
+                    '<i class="fab fa-bootstrap fa-3x"></i>',
+                    '<i class="fab fa-react fa-3x"></i>',
+                    '<i class="fab fa-yelp fa-3x"></i>',
+                    '<i class="fab fa-js fa-3x"></i>'
+                ],
+                about: "",
+                tags: "Python"
+            },
+            
         ]
 
+        // Scripting out Projects section
+        let projects = document.querySelector("#projects")
 
-
-        let projSelector = document.querySelectorAll("#proj-selector")
-        let projAbout = document.querySelector("#proj-about")
-        let projPhoto = document.querySelector("#proj-photo")
-        let projBuiltWith = document.querySelector("#proj-built")
-
-        // Project Selector Section
-        for (proj of projSelector) {
-            proj.addEventListener("click", e => {
-                console.log(e.target)
-
-                // projAbout.innerText = e.target.innerText
-                let test = projData.filter(p => p.project == e.target.innerText)
-
-                projAbout.innerText = test[0].about
-                projPhoto.src = test[0].photo
-                projBuiltWith.innerHTML = test[0].built
-                projBuiltWith.innerHTML.replace(",",'')
+        // add event listener to button for tags
+        let projSelect = document.querySelector("#filter-proj").children
+        for(let proj of projSelect){
+            proj.addEventListener("click",(e)=> {
+                let filteredProj = projData.filter((data) => data.tags === e.target.innerText)
+                createProjectCard(filteredProj)
             })
+        }
+
+        // takes filtered project from event listener button above
+        function createProjectCard(filteredProj){
+            projects.innerHTML = ""
+            for(proj of filteredProj){
+                let projTitle = document.createElement("h4")
+                projTitle.innerText = proj.project
+                projects.append(projTitle)
+            }
         }
     </script>
 
